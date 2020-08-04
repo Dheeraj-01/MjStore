@@ -1,0 +1,315 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport" content="width=device-width, initial-scale=1.0")
+    title MjStore
+    link(href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet")
+    style.
+      html{
+      scroll-behavior: smooth;
+      }
+      .mr-5 {
+      margin-right: 3.25rem;
+      }
+      .extrah1 {
+      align-items: center;
+      justify-content: center;
+      margin: 45px 647px 0px 696px;
+      font-size: 1.5rem;
+      font-weight: 500;
+      line-height: 1.5;
+      }
+      #setform{
+      width: 292px;
+      height: 375px;
+      }
+      .sticky{
+      display: flex;
+      align-items: center;
+      position:sticky;
+      top: 0px;
+      background-color: rgb(255 165 165);
+      z-index: 1;
+      }
+  body
+    header.text-gray-700.body-font.sticky
+      .container.mx-auto.flex.flex-wrap.p-5.flex-col.items-center(class="md:flex-row")
+        a.flex.title-font.font-medium.items-center.text-gray-900.mb-4(class="md:mb-0")
+          svg.w-10.h-10.text-white.p-2.bg-red-500.rounded-full(xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+            path(d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5")
+          span.ml-3.text-xl MJStore
+        nav.flex.flex-wrap.items-center.text-base.justify-center(class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-gray-400")
+          a.mr-5(class="hover:text-gray-900" href="#home") Home
+          a.mr-5(class="hover:text-gray-900" href="#store") Store Products
+          a.mr-5(class="hover:text-gray-900" href="#team") About
+          a.mr-5(class="hover:text-gray-900" href="#services") Sevices
+          a.mr-5(class="hover:text-gray-900" href="#contact") Contact
+        button.inline-flex.items-center.bg-gray-200.border-0.py-1.px-3.rounded.text-base.mt-4(class="focus:outline-none hover:bg-gray-300 md:mt-0")
+          | Location
+          svg.w-4.h-4.ml-1(fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+            path(d="M5 12h14M12 5l7 7-7 7")
+    hr
+    html
+  body
+    section.text-gray-700.body-font
+      #home.container.mx-auto.flex.px-5.py-24.flex-col.items-center(class="md:flex-row")
+        .flex.flex-col.mb-16.items-center.text-center(class="lg:flex-grow md:w-1/2 lg:pr-24 md:pr-16 md:items-start md:text-left md:mb-0")
+          h1.title-font.text-3xl.mb-4.font-medium.text-gray-900(class="sm:text-4xl")
+            | Welcome To Best Store
+            br.hidden(class="lg:inline-block")
+            | Your safety is our priority
+          p.mb-8.leading-relaxed
+            | Copper mug try-hard pitchfork pour-over freegan heirloom neutra air
+            | plant cold-pressed tacos poke beard tote bag. Heirloom echo park mlkshk tote bag selvage hot chicken
+            | authentic tumeric truffaut hexagon try-hard chambray. Lorem ipsum dolor sit amet consectetur
+            | adipisicing elit. Rerum odio laborum numquam excepturi ratione, voluptate officiis quaerat ipsum
+            | consectetur eligendi!
+          .flex.justify-center
+            button.inline-flex.text-white.bg-red-500.border-0.py-2.px-6.rounded.text-lg(class="focus:outline-none hover:bg-red-600")
+              | Contact
+              | us
+            button.ml-4.inline-flex.text-gray-700.bg-gray-200.border-0.py-2.px-6.rounded.text-lg(class="focus:outline-none hover:bg-gray-300")
+              | Join
+              | Now
+        .div(class="lg:max-w-lg lg:w-full md:w-1/2 w-5/6")
+          img.object-cover.object-center.rounded(alt="hero" src="https://source.unsplash.com/600x600/?store,shop,products")
+
+    hr
+    section#store.text-gray-700.body-font
+      .container.px-5.py-24.mx-auto.flex.flex-wrap
+        .flex.w-full.mb-20.flex-wrap
+          h1.text-2xl.font-medium.title-font.text-gray-900.mb-4(class="sm:text-3xl lg:w-1/3 lg:mb-0")
+            | Store
+            | products
+          p.mx-auto.leading-relaxed.text-base(class="lg:pl-6 lg:w-2/3")
+            | Whatever cardigan tote bag tumblr hexagon
+            | brooklyn asymmetrical gentrify, subway tile poke farm-to-table. Franzen you probably haven't heard
+            | of them man bun deep jianbing selfies heirloom. Lorem ipsum dolor sit amet consectetur adipisicing
+            | elit. Quos at aliquid et eaque dolorem eum, id, numquam tenetur quas voluptas magnam iste sit nemo
+            | quis quam voluptatem labore reprehenderit. Corporis.
+        .flex.flex-wrap.-m-1(class="md:-m-2")
+          .flex.flex-wrap(class="w-1/2")
+            .p-1(class="md:p-2 w-1/2")
+              img.w-full.object-cover.h-full.object-center.block(alt="gallery" src="https://source.unsplash.com/500x300/?store,shop,products")
+            .p-1(class="md:p-2 w-1/2")
+              img.w-full.object-cover.h-full.object-center.block(alt="gallery" src="https://source.unsplash.com/501x301/?store,shop,products")
+            .p-1.w-full(class="md:p-2")
+              img.w-full.h-full.object-cover.object-center.block(alt="gallery" src="https://source.unsplash.com/600x360/?store,shop,products")
+          .flex.flex-wrap(class="w-1/2")
+            .p-1.w-full(class="md:p-2")
+              img.w-full.h-full.object-cover.object-center.block(alt="gallery" src="https://source.unsplash.com/601x361/?store,shop,products")
+            .p-1(class="md:p-2 w-1/2")
+              img.w-full.object-cover.h-full.object-center.block(alt="gallery" src="https://source.unsplash.com/502x302/?store,shop,products")
+            .p-1(class="md:p-2 w-1/2")
+              img.w-full.object-cover.h-full.object-center.block(alt="gallery" src="https://source.unsplash.com/503x303/?store,shop,products")
+    hr
+    section.text-gray-700.body-font
+      .container.px-5.py-24.mx-auto
+        .flex.flex-wrap.-m-4.text-center
+          .p-4(class="sm:w-1/4 w-1/2")
+            h2.title-font.font-medium.text-3xl.text-gray-900(class="sm:text-4xl") 2.7K
+            p.leading-relaxed Active Users
+          .p-4(class="sm:w-1/4 w-1/2")
+            h2.title-font.font-medium.text-3xl.text-gray-900(class="sm:text-4xl") 1.8K
+            p.leading-relaxed Subscribes
+          .p-4(class="sm:w-1/4 w-1/2")
+            h2.title-font.font-medium.text-3xl.text-gray-900(class="sm:text-4xl") 35k
+            p.leading-relaxed Happy Customers
+          .p-4(class="sm:w-1/4 w-1/2")
+            h2.title-font.font-medium.text-3xl.text-gray-900(class="sm:text-4xl") 152
+            p.leading-relaxed Products
+    hr
+    section#services.text-gray-700.body-font
+      h1.text-2xl.font-medium.title-font.mb-4.text-gray-900.extrah1 Store Products
+      .container.px-5.py-24.mx-auto
+        .flex.flex-wrap.-m-4
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/420x260/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium The Catalyzer
+              p.mt-1 $16.00
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/421x261/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium Shooting Stars
+              p.mt-1 $21.15
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/422x262/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium Neptune
+              p.mt-1 $12.00
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/423x263/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium The 400 Blows
+              p.mt-1 $18.40
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/424x264/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium The Catalyzer
+              p.mt-1 $16.00
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/425x265/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium Shooting Stars
+              p.mt-1 $21.15
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/427x267/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium Neptune
+              p.mt-1 $12.00
+          .p-4.w-full(class="lg:w-1/4 md:w-1/2")
+            a.block.relative.h-48.rounded.overflow-hidden
+              img.object-cover.object-center.w-full.h-full.block(alt="ecommerce" src="https://source.unsplash.com/428x268/?items,products")
+            .mt-4
+              h3.text-gray-500.text-xs.tracking-widest.title-font.mb-1 CATEGORY
+              h2.text-gray-900.title-font.text-lg.font-medium The 400 Blows
+              p.mt-1 $18.40
+    hr
+    section#team.text-gray-700.body-font
+      .container.px-5.py-24.mx-auto
+        .flex.flex-col.text-center.w-full.mb-20
+          h1.text-2xl.font-medium.title-font.mb-4.text-gray-900 OUR TEAM
+          p.mx-auto.leading-relaxed.text-base(class="lg:w-2/3")
+            | Whatever cardigan tote bag tumblr hexagon brooklyn
+            | asymmetrical gentrify, subway tile poke farm-to-table. Lorem ipsum dolor sit amet consectetur
+            | adipisicing elit. Voluptates veniam nihil omnis. Repudiandae doloremque esse veniam, accusantium
+            | tenetur deleniti quod sed explicabo quia quam animi deserunt, reprehenderit perspiciatis qui harum.
+            | Franzen you probably haven't heard of them.
+        .flex.flex-wrap.-m-4
+          .p-4(class="lg:w-1/4 md:w-1/2")
+            .h-full.flex.flex-col.items-center.text-center
+              img.flex-shrink-0.rounded-lg.w-full.h-56.object-cover.object-center.mb-4(alt="team" src="https://source.unsplash.com/200x200/?person")
+              .w-full
+                h2.title-font.font-medium.text-lg.text-gray-900 Alper Kamu
+                h3.text-gray-500.mb-3 UI Developer
+                p.mb-4
+                  | DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+                span.inline-flex
+                  a.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z")
+          .p-4(class="lg:w-1/4 md:w-1/2")
+            .h-full.flex.flex-col.items-center.text-center
+              img.flex-shrink-0.rounded-lg.w-full.h-56.object-cover.object-center.mb-4(alt="team" src="https://source.unsplash.com/201x201/?person")
+              .w-full
+                h2.title-font.font-medium.text-lg.text-gray-900 Holden Caulfield
+                h3.text-gray-500.mb-3 UI Developer
+                p.mb-4
+                  | DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+                span.inline-flex
+                  a.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z")
+          .p-4(class="lg:w-1/4 md:w-1/2")
+            .h-full.flex.flex-col.items-center.text-center
+              img.flex-shrink-0.rounded-lg.w-full.h-56.object-cover.object-center.mb-4(alt="team" src="https://source.unsplash.com/202x202/?person")
+              .w-full
+                h2.title-font.font-medium.text-lg.text-gray-900 Atticus Finch
+                h3.text-gray-500.mb-3 UI Developer
+                p.mb-4
+                  | DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+                span.inline-flex
+                  a.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z")
+          .p-4(class="lg:w-1/4 md:w-1/2")
+            .h-full.flex.flex-col.items-center.text-center
+              img.flex-shrink-0.rounded-lg.w-full.h-56.object-cover.object-center.mb-4(alt="team" src="https://source.unsplash.com/203x203/?person")
+              .w-full
+                h2.title-font.font-medium.text-lg.text-gray-900 Henry Letham
+                h3.text-gray-500.mb-3 UI Developer
+                p.mb-4
+                  | DIY tote bag drinking vinegar cronut adaptogen squid fanny pack vaporware.
+                span.inline-flex
+                  a.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z")
+                  a.ml-2.text-gray-500
+                    svg.w-5.h-5(fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+                      path(d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z")
+    hr
+    section#contact.text-gray-700.body-font.relative
+      .container.px-5.py-24.mx-auto.flex.flex-wrap(class="sm:flex-no-wrap")
+        .bg-gray-300.rounded-lg.overflow-hidden.p-10.flex.items-end.justify-start.relative(class="lg:w-2/3 md:w-1/2 sm:mr-10")
+          iframe.absolute.inset-0(width="100%" height="100%" frameborder="0" title="map" marginheight="0" marginwidth="0" scrolling="no" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d28613.378034235207!2d74.70642572073314!3d26.304722887146895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3969591c368ecaa3%3A0xf569eaa8cc9645d!2sNasirabad!5e0!3m2!1sen!2sin!4v1596402121110!5m2!1sen!2sin")
+          .bg-white.relative.flex.flex-wrap.py-6
+            .px-6(class="lg:w-1/2")
+              h2.title-font.font-medium.text-gray-900.tracking-widest.text-sm ADDRESS
+              p.leading-relaxed 958,mj store, Dhudiya Mohalla Nasirabad 
+            .px-6.mt-4(class="lg:w-1/2 lg:mt-0")
+              h2.title-font.font-medium.text-gray-900.tracking-widest.text-sm EMAIL
+              a.text-orange-500.leading-relaxed mjstore@email.com
+              h2.title-font.font-medium.text-gray-900.tracking-widest.text-sm.mt-4 PHONE
+              p.leading-relaxed 9079364447
+        .bg-white.flex.flex-col.w-full.mt-8(class="lg:w-1/3 md:w-1/2 md:ml-auto md:py-8 md:mt-0")
+          h2.text-gray-900.text-lg.mb-1.font-medium.title-font Feedback
+          p.leading-relaxed.mb-5.text-gray-600 Post-ironic portland shabby chic echo park, banjo fashion axe
+          form#setform(action="/", method="POST")
+            input.bg-white.rounded.border.border-gray-400.text-base.px-4.py-2.mb-4(class="focus:outline-none focus:border-orange-500" placeholder="Name" type="text" name="name")
+            input.bg-white.rounded.border.border-gray-400.text-base.px-4.py-2.mb-4(class="focus:outline-none focus:border-orange-500" placeholder="Email" type="email" name="email")
+            input.bg-white.rounded.border.border-gray-400.text-base.px-4.py-2.mb-4(class="focus:outline-none focus:border-orange-500" placeholder="Phone Number" type="phone" name="phone")
+            textarea.bg-white.rounded.border.border-gray-400.h-32.text-base.px-4.py-2.mb-4.resize-none(class="focus:outline-none focus:border-orange-500", placeholder="Message" type="" name="message")
+            button.text-white.bg-orange-500.border-0.py-2.px-6.rounded.text-lg(class="focus:outline-none hover:bg-orange-600") Submit
+          p.text-xs.text-gray-500.mt-3 Chicharrones blog helvetica normcore iceland tousled brook viral artisan.
+    hr
+    footer.text-gray-700.body-font
+      .container.px-5.py-8.mx-auto.flex.items-center.flex-col(class="sm:flex-row")
+        a.flex.title-font.font-medium.items-center.justify-center.text-gray-900(class="md:justify-start")
+          svg.w-10.h-10.text-white.p-2.bg-orange-500.rounded-full(xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+            path(d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5")
+          span.ml-3.text-xl MJStore
+        p.text-sm.text-gray-500.mt-4(class="sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-gray-200 sm:py-2 sm:mt-0")
+          | © 2020 MJStore —
+          a.text-gray-600.ml-1(href="https://google.com/" rel="noopener noreferrer" target="_blank") @sindhiBazzar
+        span.inline-flex.mt-4.justify-center(class="sm:ml-auto sm:mt-0 sm:justify-start")
+          a.text-gray-500
+            svg.w-5.h-5(fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+              path(d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z")
+          a.ml-3.text-gray-500
+            svg.w-5.h-5(fill="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+              path(d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z")
+          a.ml-3.text-gray-500
+            svg.w-5.h-5(fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24")
+              rect(width="20" height="20" x="2" y="2" rx="5" ry="5")
+              path(d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01")
+          a.ml-3.text-gray-500
+            svg.w-5.h-5(fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="0" viewbox="0 0 24 24")
+              path(stroke="none" d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z")
+              circle(cx="4" cy="4" r="2" stroke="none")
